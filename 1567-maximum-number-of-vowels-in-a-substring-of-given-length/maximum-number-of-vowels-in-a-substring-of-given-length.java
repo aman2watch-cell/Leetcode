@@ -5,14 +5,14 @@ class Solution {
     }
     public int maxVowels(String s, int k) {
 
-        StringBuilder sb2 = new StringBuilder(s);
-        int left = 0;
+       // StringBuilder sb2 = new StringBuilder(s);
+        //int left = 0;
         int count = 0;
         int max = Integer.MIN_VALUE;
         StringBuilder sb1 = new StringBuilder();
-        for(int right = 0;right<=sb2.length()-1;right++){
-            sb1.append(sb2.charAt(right));
-            if(isVowel(sb2.charAt(right))){
+        for(int right = 0;right<=s.length()-1;right++){
+            sb1.append(s.charAt(right));
+            if(isVowel(s.charAt(right))){
                     count = count+1;
             }
 
@@ -23,7 +23,7 @@ class Solution {
 
                 }
                 sb1.deleteCharAt(0);
-                left++;
+              //  left++;
                
                        
 
